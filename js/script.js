@@ -106,39 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedElements.forEach(el => scrollObserver.observe(el));
 });
 
-// Professional About Section Animation
+// About Section - Static Display (No Animations)
 document.addEventListener('DOMContentLoaded', () => {
-    const aboutContent = document.querySelector('.about-content');
-    const aboutParagraphs = document.querySelectorAll('.about-text p');
-    
-    // Set up intersection observer for About section
-    const aboutObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Animate the main content container
-                entry.target.classList.add('animate');
-                
-                // Animate paragraphs with staggered delay
-                aboutParagraphs.forEach((p, index) => {
-                    setTimeout(() => {
-                        p.classList.add('animate');
-                    }, 800 + (index * 200));
-                });
-                
-                // Only trigger once
-                aboutObserver.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.3,
-        rootMargin: '0px 0px -100px 0px'
-    });
-    
-    if (aboutContent) {
-        aboutObserver.observe(aboutContent);
-    }
-    
-    // Observe other animated elements (excluding About section)
+    // No animations for About section - just observe other elements
     const otherAnimatedElements = document.querySelectorAll('.fade-in:not(.about *), .slide-in-left:not(.about *), .slide-in-right:not(.about *), .scale-in:not(.about *)');
     otherAnimatedElements.forEach(el => observer.observe(el));
 });
@@ -375,21 +345,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Add subtle parallax scrolling effect to the About section
-window.addEventListener('scroll', () => {
-    const aboutSection = document.querySelector('.about');
-    const aboutContent = document.querySelector('.about-content');
-    
-    if (aboutSection && aboutContent) {
-        const rect = aboutSection.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-        
-        if (isVisible) {
-            const scrolled = window.pageYOffset;
-            const parallax = scrolled * 0.1;
-            
-            // Subtle parallax effect on background elements
-            aboutSection.style.transform = `translateY(${parallax}px)`;
-        }
-    }
-});
+// About section parallax removed for static display
