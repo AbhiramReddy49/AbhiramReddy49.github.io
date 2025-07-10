@@ -3,45 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhiram Reddy Veeramalla - Portfolio</title>
+    <title>Abhiram Reddy Veeramalla - Professional Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
-        <div class="nav-content">
-            <div class="logo">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
                 <a href="#home">Abhiram Reddy</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="profile-container">
-                <!-- Profile Image Placeholder -->
-                <div class="profile-image">
-                    <!-- Replace src with your actual image path -->
-                    <img src="images/profile.jpg" alt="Abhiram Reddy Veeramalla">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hello, I'm <span class="highlight">Abhiram Reddy</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Software Trainee & Azure Cloud Solutions Specialist</h2>
+                    <p class="hero-description">
+                        Specialized in delivering robust cloud solutions through Azure DevOps, with expertise 
+                        in KQL, Power BI dashboard development, and automated security implementations. 
+                        Experienced in creating reusable functions for Azure Logic Apps and cross-cluster 
+                        mapping solutions for enhanced operational efficiency.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="assets/resume.pdf" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:abhiramreddyveeramalla@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/abhiramreddy49" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/AbhiramReddy49" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-text">
-                <h1>Abhiram Reddy Veeramalla</h1>
-                <h2>Azure DevOps Engineer</h2>
-                <p>Delivering robust cloud solutions through Azure DevOps, streamlining deployments using Python and shell scripting.</p>
-                <div class="social-links">
-                    <a href="mailto:abhiramreddyveeramalla@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://linkedin.com/in/abhiramreddy49"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/AbhiramReddy49"><i class="fab fa-github"></i></a>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="images/profile.jpg" alt="Abhiram Reddy Veeramalla">
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,59 +93,246 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <p>I am a dedicated Azure DevOps Engineer with a passion for creating efficient, secure cloud solutions. Specializing in streamlining deployments and optimizing CI/CD pipelines, I bring expertise in Python, shell scripting, and infrastructure automation. My focus is on delivering robust solutions that enhance system reliability and operational efficiency.</p>
-            <p>With a background in Artificial Intelligence and Machine Learning, I combine technical expertise with a forward-thinking approach to solve complex challenges in cloud infrastructure and automation.</p>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Dedicated to excellence in cloud engineering and DevOps</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I have delivered robust cloud solutions through Azure DevOps, streamlined deployments 
+                        using Python and shell scripting, and optimized CI/CD pipelines with automated 
+                        infrastructure using YAML. My expertise includes creating impactful Power BI 
+                        dashboards, resolving data issues using KQL, and developing reusable KQL functions 
+                        for Azure Logic Apps.
+                    </p>
+                    <p>
+                        With a background in Artificial Intelligence and Machine Learning, I specialize in 
+                        cross-cluster mapping of Azure DevOps area paths to ServiceTree metadata, enhancing 
+                        visibility and operational efficiency. My focus is on delivering comprehensive 
+                        security solutions and automated monitoring systems that improve threat detection 
+                        and reduce security incidents.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Azure DevOps Engineer</h3>
-                <h4>Quadrant Technologies</h4>
-                <p class="date">Nov 2024 – Present</p>
-                <ul>
-                    <li>Delivered comprehensive security solutions for S360 portal, enhancing data protection and compliance monitoring through Microsoft Purview integration</li>
-                    <li>Implemented automated security controls and monitoring systems reduction in security incidents and improved threat detection</li>
-                </ul>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My career journey and achievements</p>
             </div>
-            <div class="timeline-item">
-                <h3>Software Engineer Intern</h3>
-                <h4>Quadrant Technologies</h4>
-                <p class="date">Jul 2024 – Oct 2024</p>
-                <ul>
-                    <li>Successfully completed intensive training in Azure Fundamentals</li>
-                    <li>Contributed to DevOps projects by implementing CI/CD pipelines</li>
-                    <li>Collaborated with senior DevOps engineers in implementing Infrastructure as Code practices</li>
-                </ul>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Trainee</h3>
+                        <h4>Quadrant Technologies, Warangal</h4>
+                        <p class="timeline-date">Nov 2024 – Present</p>
+                        <ul>
+                            <li><strong>Kusto Query Language (KQL):</strong> Created reusable functions for Azure Logic Apps to streamline data operations</li>
+                            <li><strong>Cross-cluster Development:</strong> Developed cross-cluster KQL functions to map Azure DevOps area paths to ServiceTree metadata, enhancing repair item tracking and service ownership visibility</li>
+                            <li><strong>Power BI:</strong> Created several visualizations to enhance existing dashboards and improve data storytelling</li>
+                            <li><strong>Data Management:</strong> Refreshed dashboards and resolved data errors using KQL, developed custom measures using basic DAX</li>
+                            <li><strong>S360 Security:</strong> Delivered comprehensive security solutions for the S360 portal, enhancing data protection and compliance monitoring through Microsoft Purview integration</li>
+                            <li><strong>Security Automation:</strong> Implemented automated security controls and monitoring systems, resulting in reduction in security incidents and improved threat detection</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Intern</h3>
+                        <h4>Quadrant Technologies, Warangal</h4>
+                        <p class="timeline-date">Jul 2024 – Nov 2024</p>
+                        <ul>
+                            <li>Successfully completed intensive training in Azure Fundamentals, gaining hands-on experience with cloud services, virtual machines, and storage solutions</li>
+                            <li>Contributed to DevOps projects by assisting in implementing CI/CD pipelines for faster deployment cycles</li>
+                            <li>Collaborated with senior DevOps engineers in implementing Infrastructure as Code practices using Azure templates and YAML configurations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic foundation and continuous learning</p>
+            </div>
+            <div class="education-cards">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Bachelor's in Artificial Intelligence and Machine Learning</h3>
+                    <h4>Balaji Institute of Technology and Science</h4>
+                    <p class="education-date">Nov 2020 – Jun 2024</p>
+                    <p class="education-description">
+                        Comprehensive study in AI/ML technologies, data structures, algorithms, 
+                        and software engineering principles. Graduated with strong foundation 
+                        in modern computing technologies.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="skill-items">
-                    <span class="skill-item">Python</span>
-                    <span class="skill-item">YAML</span>
-                    <span class="skill-item">HTML</span>
-                    <span class="skill-item">CSS</span>
-                    <span class="skill-item">PowerShell</span>
-                </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
             </div>
-            <div class="skill-category">
-                <h3>Technologies</h3>
-                <div class="skill-items">
-                    <span class="skill-item">Azure</span>
-                    <span class="skill-item">CI/CD</span>
-                    <span class="skill-item">DevOps</span>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Azure Portal</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Azure DevOps</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Azure Data Factory (ADF)</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Azure Key Vault</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming & Query Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">KQL (Kusto Query Language)</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">YAML</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PowerShell & Bash</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Microsoft Power BI</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Azure Logic Apps</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Microsoft Entra Identity</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Kusto (Azure Data Explorer)</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML & CSS</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,73 +340,191 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Natural Language SQL Query Generator</h3>
-                <p>A cutting-edge NLP-driven system that empowers users to generate SQL queries from natural language, dramatically enhancing database accessibility.</p>
-                <ul>
-                    <li>Pioneered NLP-driven query generation system</li>
-                    <li>Engineered algorithms for efficient query translation</li>
-                    <li>Simplified database access for non-tech users</li>
-                </ul>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcase of my technical achievements</p>
             </div>
-            <div class="project-card">
-                <h3>Sensor-Based Highway Safety System</h3>
-                <p>An innovative alarm system designed to enhance highway safety through sensor technology.</p>
-                <ul>
-                    <li>Engineered a sensor alarm system for highway safety</li>
-                    <li>Implemented ultrasonic sensors for vehicle detection</li>
-                    <li>Triggered timely alarms for safety threshold breaches</li>
-                </ul>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Natural Language SQL Query Generator</h3>
+                        <p>
+                            A cutting-edge NLP-driven system that empowers users to generate SQL queries 
+                            from natural language, dramatically enhancing database accessibility for 
+                            non-technical users.
+                        </p>
+                        <ul class="project-features">
+                            <li>Pioneered NLP-driven query generation system</li>
+                            <li>Engineered algorithms for efficient query translation</li>
+                            <li>Simplified database access for non-tech users</li>
+                            <li>Integrated with multiple database systems</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sensor-Based Highway Safety System</h3>
+                        <p>
+                            An innovative alarm system designed to enhance highway safety through 
+                            advanced sensor technology and real-time monitoring capabilities.
+                        </p>
+                        <ul class="project-features">
+                            <li>Engineered sensor alarm system for highway safety</li>
+                            <li>Implemented ultrasonic sensors for vehicle detection</li>
+                            <li>Triggered timely alarms for safety threshold breaches</li>
+                            <li>Real-time data processing and analysis</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Sensors</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Real-time Systems</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Azure DevOps Pipeline Automation</h3>
+                        <p>
+                            Comprehensive CI/CD pipeline implementation for enterprise applications 
+                            using Azure DevOps, reducing deployment time and improving reliability.
+                        </p>
+                        <ul class="project-features">
+                            <li>Automated deployment processes</li>
+                            <li>Infrastructure as Code implementation</li>
+                            <li>Security integration with Microsoft Purview</li>
+                            <li>Monitoring and alerting systems</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Azure DevOps</span>
+                            <span class="tech-tag">YAML</span>
+                            <span class="tech-tag">PowerShell</span>
+                            <span class="tech-tag">ARM Templates</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <h2 class="section-title">Education</h2>
-        <div class="education-card">
-            <h3>Balaji Institute of Technology and Science</h3>
-            <p>Artificial Intelligence and Machine Learning</p>
-            <p class="date">Nov 2020 – Jun 2024</p>
-        </div>
-        <div class="certifications">
-            <h3>Certifications</h3>
-            <div class="cert-item">
-                <i class="fas fa-certificate"></i>
-                <span>Microsoft Certified: Azure Fundamentals</span>
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional certifications and achievements</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>Microsoft Certified: Azure Fundamentals</h3>
+                    <p class="certification-provider">Microsoft</p>
+                    <p class="certification-date">Sep 3, 2024</p>
+                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/AbhiramVeeramalla-8657/ABA86673E1D16607?sharingId" 
+                       target="_blank" class="certification-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Credential
+                    </a>
+                </div>
+                <!-- Add more certifications as needed -->
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:abhiramreddyveeramalla@gmail.com">abhiramreddyveeramalla@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>9542337508</span>
-                </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss how we can work together</p>
             </div>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/abhiramreddy49" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/AbhiramReddy49" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:abhiramreddyveeramalla@gmail.com">
+                                abhiramreddyveeramalla@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <span>+91 9542337508</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/abhiramreddy49" target="_blank">
+                                linkedin.com/in/abhiramreddy49
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/AbhiramReddy49" target="_blank">
+                                github.com/AbhiramReddy49
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Abhiram Reddy Veeramalla. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Abhiram Reddy Veeramalla. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="mailto:abhiramreddyveeramalla@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/abhiramreddy49" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AbhiramReddy49" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
