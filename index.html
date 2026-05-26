@@ -281,6 +281,19 @@ nav {
   transform: translateY(-2px);
 }
 
+.btn-download {
+  background: transparent;
+  color: var(--green);
+  border: 1px solid rgba(63,185,80,0.3);
+}
+
+.btn-download:hover {
+  background: var(--green-glow);
+  border-color: rgba(63,185,80,0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(63,185,80,0.15);
+}
+
 /* ─── HERO RIGHT — PHOTO ─── */
 .hero-right {
   display: flex;
@@ -921,13 +934,14 @@ footer {
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <span class="stat-num">2 - 3 Weeks</span>
+        <span class="stat-num">2-3 Weeks</span>
         <span class="stat-label">Notice Period</span>
       </div>
     </div>
 
     <div class="hero-actions">
       <a href="mailto:abhiramreddyveeramalla@gmail.com" class="btn btn-primary">Get In Touch →</a>
+      <a href="./Abhiram_Reddy_Resume.pdf" download="Abhiram_Reddy_Resume.pdf" class="btn btn-download">⬇ Download Resume</a>
       <a href="https://linkedin.com/in/abhiramreddy49" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
     </div>
   </div>
